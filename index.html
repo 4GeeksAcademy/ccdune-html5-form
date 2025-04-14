@@ -21,34 +21,34 @@
                     <div id="error-msg" class="alert alert-danger">Some fields are missing</div>
                     <form method="post" action="#">
                         <!-- top row of -->
-                        <div class="row mt-3">
-                            <div class="col mt-3">
+                        <div class="row mt-4">
+                            <div class="col-sm-5 pb-3">
                                 <label for="creditCardNum">Card #</label>
                                 <input class="form-control" id="creditCardNum" placeholder="XXXXXXXXXXXXXXXX" type="text">
                             </div>
-                            <div class="col mt-3">
+                            <div class="col-sm-3 pb-3">
                                 <label for="creditCardCVC">CVC #</label>
                                 <input class="form-control" id="creditCardCVC" placeholder="000" type="text">
                             </div>
-                            <div class="col mt-3">
+                            <div class="col-sm-4 pb-3">
                                 <label for="creditAmount">Amount</label>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text">$</span>
                                     <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="creditAmount">
                                   </div>
-                            <div class="col pb-3">
+                            <div class="col-md-6 pb-3">
                                 <label for="formFirstName">First Name</label>
                                 <input class="form-control" id="formFirstName" type="text">
                             </div>
-                            <div class="col pb-3">
+                            <div class="col-md-6 pb-3">
                                 <Label for="formLastName">Last Name</Label>
                                 <input class="form-control" id="formLastName" type="text">
                             </div>
-                            <div class="col pb-3">
+                            <div class="col-sm-6 pb-3">
                                 <label for="creditCardCity">City</label>
                                 <input class="form-control" id="creditCardCity" type="text">
                             </div>
-                            <div class="col pb-3">
+                            <div class="col-sm-5 pb-3">
                                 <label for="creditCardSt">State</label> 
                                 <select class="form-control custom-select" id="creditCardSt">
                                 <option class="text-white bg-warning">
@@ -209,10 +209,31 @@
                                 </option>
                                 </select>
                             </div>
-                            <div class="col pb-3">
+                            <div class="col-md-6 pb-3">
                                 <label for="creditCardZip">Postal Code</label>
                                 <input class="form-control" id="creditCardZip" type="text">
                             </div>
+                            </div>
+                            <div class="col-md-6 pb-3">
+                                <p for="creditCardAccept">We accept:</p>
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-secondary">
+                                        <input autocomplete="off" checked id="blue" name="options" type="radio">
+                                        <i class="fab fa-cc-mastercard"></i>
+                                    </label> 
+                                    <label class="btn btn-secondary">
+                                        <input autocomplete="off" id="red" name="options" type="radio">
+                                        <i class="fab fa-cc-visa"></i>
+                                    </label> 
+                                    <label class="btn btn-secondary">
+                                        <input autocomplete="off" id="green" name="options" type="radio">
+                                        <i class="fab fa-cc-diners-club"></i>
+                                    </label> 
+                                    <label class="btn btn-secondary">
+                                        <input autocomplete="off" id="yellow" name="options" type="radio">
+                                        <i class="fab fa-cc-amex"></i>
+                                    </label> 
+                                </div>
                             </div>
                         </div>
                     </form>
